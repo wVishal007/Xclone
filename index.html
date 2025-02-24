@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="src/utilities.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+  </head>
+  <body>
+    <div class="outer-box w-full h-full flex container mx-auto px-25 bg-black text-white">
+      <div class="first w-full flex">
+        <div class="sidebar flex flex-col fixed">
+            
+            <ul class="icon-texts flex justify-center flex-col items-center">
+                <img src="assets/svgs/x.svg" class="svg mt-5 mb-2 ml-14 self-start" alt="" srcset="">
+                <!-- <li class="flex justify-center items-center m-4">
+                <img src="assets/svgs/search.svg" alt="" srcset=""><span class="m-2">Home</span>    
+                </li> -->
+            </ul>
+            <div class="btn relative bg-black h-16 ml-9">
+            <button class="bg-white cursor-pointer text-black text-1.5xl absolute w-46 h-13 flex justify-center items-center font-bold rounded-3xl">Post</button>
+        </div>
+            <div class="account flex justify-center items-center z-10 relative my-0 bg-black h-18 left-11 gap-1">
+                <div class="pfp"><img src="assets/images/pfp.jpg" class="" alt="" srcset=""></div>
+                <span class="username flex flex-col text-white">
+                    <h6 class="font-bold">Vishal Singh</h6>
+                    <h6>@Vishal70_07</h6>
+                </span>
+                <span class="more"><img src="assets/svgs/more.svg" class="w-10" alt="" srcset=""></span>
+            </div>
+        
+        </div>
+      </div>
+      <div class="second w-700 border border-gray-600">
+        <div class="nav flex h-14 w-full">
+            <div class="foryou flex border border-gray-600 w-full text-center items-center justify-center"><button class="cursor-pointer hover:bg-blue-500" >For You</button></div>
+            <div class="following flex border border-gray-600 w-full text-center items-center justify-center"><button class="cursor-pointer hover:bg-blue-500" >Following</button></div>
+    </div>
+
+    <div class="postarea border border-gray-600 h-40 w-full">
+        <div class="frame flex flex-col gap-3 items-center justify-center relative">
+            <div class="pfp"><img src="assets/images/pfp.jpg" class="absolute left-6 top-8" alt="" srcset=""></div>
+            <input type="text" class="w-140 h-23 text-2xl text-gray-400 p-5 border-b-blue-200" value="What is happening?!">
+            <div class="buttonset flex justify-around gap-80">
+                <div class="btset1 flex gap-1">
+                    <!-- <button><img src="assets/svgs/image.svg" class="w-7" alt="" srcset=""></button> -->
+                </div>
+                <div class="btset2 flex">  <button class="bg-white cursor-pointer text-black text-1.5xl w-16 min-h-8 flex justify-center items-center font-bold rounded-3xl">Post</button></div>
+            </div>
+        </div>
+    </div>
+        <div class="showmore border border-gray-600 h-14 flex justify-center items-center">
+<h5 class="text-blue-400">Show more posts</h5>
+        </div>
+    <div class="posts flex flex-col">
+        <div class="postcard h-max-100 border border-gray-600 relative">
+            <img src="assets/images/pfp.jpg" class="absolute left-11 top-3 right-0 w-10 h-10 object-cover round" alt="" srcset="">
+            <div class="frame h-full w-120 mx-auto p-1">
+                <div class="user flex gap-3 pl-1 pt-2">
+                    <span class="name">Vishal</span>
+                    <span class="username">@Vishal70_07</span>
+                </div>
+                <div class="img"><img src="assets/posts/ps1.jpg" alt="" srcset=""></div>
+                <div class="content">India is a country with a proud heritage and culture yet many of it's legacies are still unknown to youth</div>
+            </div>
+        </div>
+    </div>
+      </div>
+      <div class="third w-full flex flex-col gap-3">
+        <div class="searchbox"></div>
+        <button class="search p-3 w-full h-11 m-2 border border-gray-600 rounded-full flex justify-items-start items-center"><img src="assets/svgs/search.svg" class="w-7 inline-flex gap-3" alt="" srcset="">search</button>
+
+    
+        <div class="offer w-full h-40 border p-3 border-gray-600 rounded-3xl m-2 flex flex-col justify-start">
+            <h1 class="font-bold text-2xl">40% off on premium</h1>
+            <p class="">For a limited time. Unlock the best of X.</p>
+            <button class="bg-white cursor-pointer text-black w-22 h-14 m-3 flex justify-center items-center font-bold rounded-3xl">Subscribe</button>
+
+        </div>
+        <div class="trending sticky w-full h-90 overflow-auto border border-gray-600 rounded-3xl m-2 flex flex-col">
+            <div class="trend-cards border-t border-b border-gray-500 border rounded-3xl w-full h-30 flex justify-between items-center p-2">
+                <div class="content  p-3 flex flex-col gap-1">
+                <div class="region text-gray-400">trending in india</div>
+                <div class="hash font-extrabold">#One Piece</div>
+                <div class="post  text-gray-400">1M posts</div>
+            </div>
+            <img src="assets/svgs/more.svg" alt="" srcset="">
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="generate.js"></script>
+  </body>
+</html>

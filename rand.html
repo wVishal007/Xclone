@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="src/utilities.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+  </head>
+  <body class="bg-black text-white">
+    <div class="outer-box w-full flex container mx-auto px-6">
+      <!-- Sidebar -->
+      <aside class="sidebar flex flex-col fixed w-64 h-screen p-5">
+        <img src="assets/svgs/x.svg" class="w-10 mb-4" alt="X Logo" />
+        <nav class="flex flex-col gap-4">
+          <button class="bg-white text-black font-bold rounded-3xl py-3 px-6">Post</button>
+        </nav>
+        <div class="account flex items-center mt-auto gap-3">
+          <img src="assets/images/pfp.jpg" class="w-10 h-10 rounded-full" alt="Profile Picture" />
+          <div class="text-sm">
+            <h6 class="font-bold">Vishal Singh</h6>
+            <p class="text-gray-400">@Vishal70_07</p>
+          </div>
+          <img src="assets/svgs/more.svg" class="w-6 ml-auto" alt="More Options" />
+        </div>
+      </aside>
+      
+      <!-- Main Content -->
+      <main class="ml-64 w-[700px] border-l border-r border-gray-600">
+        <!-- Navigation -->
+        <div class="nav flex h-14 border-b border-gray-600">
+          <button class="w-1/2 text-center py-3 hover:bg-blue-500">For You</button>
+          <button class="w-1/2 text-center py-3 hover:bg-blue-500">Following</button>
+        </div>
+        
+        <!-- Post Area -->
+        <div class="postarea border-b border-gray-600 p-4 flex gap-4">
+          <img src="assets/images/pfp.jpg" class="w-10 h-10 rounded-full" alt="Profile Picture" />
+          <div class="flex flex-col w-full">
+            <input type="text" class="w-full bg-transparent text-2xl text-gray-400 border-b border-gray-600 py-2" placeholder="What is happening?!" />
+            <div class="flex justify-between mt-3">
+              <div></div>
+              <button class="bg-white text-black font-bold rounded-3xl py-2 px-5">Post</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Show More -->
+        <div class="showmore border-b border-gray-600 text-center py-3 cursor-pointer text-blue-400">Show more posts</div>
+        
+        <!-- Posts -->
+        <div class="posts flex flex-col">
+          <article class="postcard border-b border-gray-600 p-4 flex gap-4">
+            <img src="assets/images/pfp.jpg" class="w-10 h-10 rounded-full" alt="Profile Picture" />
+            <div class="w-full">
+              <div class="flex gap-2">
+                <span class="font-bold">Vishal</span>
+                <span class="text-gray-400">@Vishal70_07</span>
+              </div>
+              <p class="mt-2">India is a country with a proud heritage and culture yet many of its legacies are still unknown to youth.</p>
+              <img src="assets/posts/ps1.jpg" class="mt-2 rounded-lg" alt="Post Image" />
+            </div>
+          </article>
+        </div>
+      </main>
+      
+      <!-- Right Sidebar -->
+      <aside class="w-80 flex flex-col gap-4 p-4">
+        <!-- Search -->
+        <button class="search flex items-center gap-3 p-3 border border-gray-600 rounded-full">
+          <img src="assets/svgs/search.svg" class="w-6" alt="Search Icon" /> Search
+        </button>
+        
+        <!-- Offer -->
+        <div class="offer p-4 border border-gray-600 rounded-3xl">
+          <h1 class="font-bold text-xl">40% off on Premium</h1>
+          <p class="mt-1 text-gray-400">For a limited time. Unlock the best of X.</p>
+          <button class="bg-white text-black font-bold rounded-3xl py-2 px-6 mt-2">Subscribe</button>
+        </div>
+        
+        <!-- Trending -->
+        <div class="trending border border-gray-600 rounded-3xl p-4 overflow-auto">
+          <div class="trend-cards flex justify-between items-center border-b border-gray-600 py-2">
+            <div>
+              <p class="text-gray-400">Trending in India</p>
+              <p class="font-extrabold">#One Piece</p>
+              <p class="text-gray-400">1M posts</p>
+            </div>
+            <img src="assets/svgs/more.svg" class="w-6" alt="More Options" />
+          </div>
+        </div>
+      </aside>
+    </div>
+    <script src="generate.js"></script>
+  </body>
+</html>
